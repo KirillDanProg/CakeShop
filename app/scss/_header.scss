@@ -1,0 +1,99 @@
+$main: rgb(71, 35, 35);
+$sec: #8e0b0a;
+$light: rgb(254, 204, 212);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Lobster", cursive;
+  color: $main;
+
+  ul, li {
+      list-style: none;
+  }
+  a {
+      color: unset;
+      text-decoration: none;
+  }
+  img {
+      max-width: 100%;
+  }
+
+  .header-lie {
+      margin-bottom: px;
+  }
+  .header {
+      position: fixed;
+      z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: $light;
+
+    .logo {
+        width: 100%;
+        font-size: 35px;
+        .logo__img {
+        }
+    }
+
+    .nav {
+        width: 100%;
+      .list {
+          position: relative;
+          display: flex;
+          justify-content: space-evenly;
+        .list__item {
+            color: $main;
+            font-size: 24px;
+        }
+        .list__item:nth-child(1) {
+            margin-right: 5px;
+            top: -2px;
+            left: 0;
+            animation: blink 0.5s ease-in-out infinite alternate;
+        }
+        .lie-box {
+            visibility: hidden;
+        }
+        @keyframes blink {
+            from {
+                // border: 1px solid $sec;
+                // border-radius: 10px;
+                transform: scale(1);
+            }
+            to {
+                // border: 2px solid $sec;
+                // border-radius: 10px;
+                transform: scale(1.15);
+            }
+        }
+        // .list__item:after {
+        //     content: "";
+        //     position: absolute;
+        //     width: 100%;
+
+        //     transform: scaleX(0);
+        //     height: 3px;
+        //     bottom: 0;
+        //     left: 0;
+        //     background-color: $sec;
+        //     transform-origin: bottom right;
+        //     transition: transform 0.25s linear;
+        // }
+        // .list__item:hover:after {
+        //     transform: scaleX(1);
+        //     transform-origin: bottom left;
+        // }
+      }
+    }
+  }
+}
+
+
+    

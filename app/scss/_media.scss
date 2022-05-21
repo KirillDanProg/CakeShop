@@ -1,0 +1,25 @@
+@media screen and (max-width: 600px) {
+    body {
+        .header {
+            .logo {
+                margin-bottom: 15px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            .nav {
+                .list {
+                    .list__item {
+                        width: 25%;
+                        font-size: 16px;
+                        text-align: center
+                    }
+                    .list__item:nth-child(1) {
+                        margin-right: 5px;
+                        top: -2px;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+};

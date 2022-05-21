@@ -1,0 +1,48 @@
+body {
+  box-sizing: border-box;
+  .reviews {
+    margin-top: 16px;
+    .title {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    .review-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      .review {
+        display: inline-block;
+        width: 60%;
+        text-align: center;
+        border-radius: 10px;
+        border: 3px solid $sec;
+        overflow: hidden;
+
+        .user {
+          position: relative;
+          padding: 15px;
+          font-size: 70px;
+          display: inline-block;
+          background-color: $light;
+          border-radius: 50%;
+        }
+        img {
+        }
+        h4 {
+          text-align: center;
+        }
+        .review-content {
+          display: none;
+        }
+        .active-review {
+          display: block;
+        }
+      }
+      .btn {
+        font-size: 24px;
+      }
+    }
+  }
+}
