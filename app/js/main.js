@@ -4,10 +4,14 @@ const next = document.querySelector(".next");
 const btns= document.querySelectorAll(".btn")
 let currentSlide = 0;
 
+
 // window.addEventListener("click", changeReview);
 // prev.addEventListener("click", changeReview)
 // next.addEventListener("click", changeReview)
 btns.forEach((btn) => btn.addEventListener("click", changeReview))
+
+
+
 
 
 function changeReview(e) {
