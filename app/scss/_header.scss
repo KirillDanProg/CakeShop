@@ -12,66 +12,66 @@ body {
   font-family: "Lobster", cursive;
   color: $main;
 
-  ul, li {
-      list-style: none;
+  ul,
+  li {
+    list-style: none;
   }
   a {
-      color: unset;
-      text-decoration: none;
+    color: unset;
+    text-decoration: none;
   }
   img {
-      max-width: 100%;
+    max-width: 100%;
   }
 
   .header-lie {
-      margin-bottom: px;
+    visibility: hidden;
+    height: 85px;
   }
   .header {
-      position: fixed;
-      z-index: 99;
+    position: fixed;
+    z-index: 99;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 10px;
     background-color: $light;
-
+    background-color: rgba(255, 192, 203, 0.835);
     .logo {
-        width: 100%;
-        font-size: 35px;
-        .logo__img {
-        }
+      width: 100%;
+      font-size: 24px;
     }
 
     .nav {
-        width: 100%;
+      width: 100%;
       .list {
-          position: relative;
-          display: flex;
-          justify-content: space-evenly;
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
         .list__item {
-            color: $main;
-            font-size: 24px;
+          color: $main;
+          font-size: 24px;
         }
         .list__item:nth-child(1) {
-            margin-right: 5px;
-            top: -2px;
-            left: 0;
-            animation: blink 0.5s ease-in-out infinite alternate;
+          margin-right: 5px;
+          top: -2px;
+          left: 0;
+          animation: blink 0.5s ease-in-out infinite alternate;
         }
         .lie-box {
-            visibility: hidden;
+          visibility: hidden;
         }
         @keyframes blink {
-            from {
-                // border: 1px solid $sec;
-                // border-radius: 10px;
-                transform: scale(1);
-            }
-            to {
-                // border: 2px solid $sec;
-                // border-radius: 10px;
-                transform: scale(1.15);
-            }
+          from {
+            // border: 1px solid $sec;
+            // border-radius: 10px;
+            transform: scale(1);
+          }
+          to {
+            // border: 2px solid $sec;
+            // border-radius: 10px;
+            transform: scale(1.15);
+          }
         }
         // .list__item:after {
         //     content: "";
@@ -94,6 +94,3 @@ body {
     }
   }
 }
-
-
-    
