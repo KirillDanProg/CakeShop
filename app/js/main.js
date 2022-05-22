@@ -1,11 +1,18 @@
 const reviews = document.querySelectorAll(".review-content");
+const prev = document.querySelector(".prev");
+const next = document.querySelector(".next");
+const btns= document.querySelectorAll(".btn")
 let currentSlide = 0;
 
-window.addEventListener("click", changeReview);
-// window.addEventListener("touchend", changeReview)
+// window.addEventListener("click", changeReview);
+// prev.addEventListener("click", changeReview)
+// next.addEventListener("click", changeReview)
+btns.forEach((btn) => btn.addEventListener("click", changeReview))
+
 
 function changeReview(e) {
     let target = e.target
+    console.log(target)
     if(target.classList.contains("btn") && target.classList.contains("prev")) {
         currentSlide--;
         if(currentSlide < 0) {currentSlide = reviews.length - 1}
