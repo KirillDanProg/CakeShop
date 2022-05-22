@@ -2,7 +2,7 @@ const reviews = document.querySelectorAll(".review-content");
 let currentSlide = 0;
 
 window.addEventListener("click", changeReview);
-// window.addEventListener("touchend", changeReview)
+window.addEventListener("touchend", changeReview)
 
 function changeReview(e) {
     let target = e.target
