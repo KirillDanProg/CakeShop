@@ -17,6 +17,16 @@ body {
                 border-radius: 10px;
                 border: none;
             }
+            .submit {
+                font-size: 20px;
+                background-color: rgba(232, 154, 45, 0.887);
+            }
+            .submit:hover {
+                background-color: rgba(250, 157, 27, 0.901);
+            }
+            .submit:active {
+                background-color: rgba(250, 157, 27, 0.901);
+            }
         }
     }
 }
