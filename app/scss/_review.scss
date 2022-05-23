@@ -1,7 +1,10 @@
 body {
   box-sizing: border-box;
   .reviews {
-    margin: 35px 0;
+    // margin: 30px 0;
+    padding: 80px 0;
+    background: linear-gradient(rgba(255, 192, 203, 0.086), rgba(255, 192, 203, 0.108)), url(https://images.unsplash.com/photo-1622896784083-cc051313dbab?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774) fixed 100%;
+    background-size: contain;
     .title {
       width: 100%;
       text-align: center;
@@ -15,9 +18,11 @@ body {
       .review {
         display: inline-block;
         width: 60%;
+        padding: 10px;
         text-align: center;
         border-radius: 10px;
         border: 3px solid $sec;
+        background-color: #fff;
         overflow: hidden;
 
         .user {
