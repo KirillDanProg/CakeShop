@@ -1,9 +1,12 @@
 body {
     .order {
-        padding: 150px 0;
+        margin-top: 50px;
+        padding-top: 90px;
+        height: auto;
         background: linear-gradient(rgba(255, 192, 203, 0.391), rgba(255, 192, 203, 0.4)), url(https://images.unsplash.com/photo-1562440499-64c9a111f713?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774) center/cover, no-repeat;
        
         form {
+            padding-bottom: 20px;
             input {
                 display: block;
                 width: 70%;
@@ -17,6 +20,7 @@ body {
                 border: none;
             }
             .submit {
+                margin: 0 auto;
                 font-size: 20px;
                 background-color: rgba(232, 154, 45, 0.887);
             }

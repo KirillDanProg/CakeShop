@@ -1,6 +1,8 @@
 body {
   .hero {
     position: relative;
+    background-color: #fff;
+    z-index: 4;
     .banner {
       position: relative;
       .btn-banner {

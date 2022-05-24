@@ -1,0 +1,32 @@
+body {
+  .about__map {
+    max-width: 100%;
+    height: 40vh;
+  }
+  .about__info {
+    padding: 20px;
+    background-color: #fff;
+    .social {
+        display: flex;
+        a {
+            margin: 8px;
+        }
+    }
+
+    h4 {
+margin-bottom: 4px;
+      font-size: 22px;
+    }
+    p {
+        margin-bottom: 17px;
+      font-size: 20px;
+    }
+    i {
+        font-size: 45px;
+    }
+    a {
+        color: #d9a484;
+        display: block;
+    }
+  }
+}

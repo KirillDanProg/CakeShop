@@ -2,6 +2,15 @@ body {
     background-color: #fff;
     position: relative;
     z-index: 2;
+    .title {
+        text-align: center;
+        font-size: 32px;
+        padding: 30px 0 8px;
+       
+    }
+    .title-main {
+        background-color: #fff;
+    }
     .main {
         .menu__list {
             position: relative;

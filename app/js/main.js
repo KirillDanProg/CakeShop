@@ -6,6 +6,7 @@ const banner = document.querySelector(".banner-img");
 const bannerSlides = document.querySelectorAll(".banner-img img");
 const bannerBtns = document.querySelectorAll(".btn-banner");
 
+
 let currentSlide = 0;
 let index = 0;
 let isPlaying = true;
@@ -75,6 +76,7 @@ function prevBanner() {
   banner.style.transform = `translate(-${index}%)`;
 }
 
+
 bannerBtns.forEach((bannerBtn) => {
   bannerBtn.addEventListener("click", stopSlider);
 });
@@ -82,12 +84,8 @@ bannerBtns.forEach((bannerBtn) => {
 function stopSlider() {
   isPlaying = false;
   clearInterval(intervalID);
-  console.log(isPlaying);
-  setTimeout(() => {
-    isPlaying = true;
-    startSlider()
-  }, 1900);
 }
+
 function startSlider() {
   if (isPlaying) {
     intervalID = setInterval(() => {
@@ -96,53 +94,3 @@ function startSlider() {
   }
 }
 
-// TRANSFORM TRANSLATE VARIANT
-// btnNext.addEventListener("click", () => {
-//   index += 100;
-//   if (index / 100 > slide.length - 1) {
-//     index = 0;
-//   }
-//   container.style.transform = `translate(-${index}%)`;
-// });
-
-// btnPrev.addEventListener("click", () => {
-//   if (index === 0) {
-//     index = slide.length * 100;
-//   }
-//   index -= 100;
-//   container.style.transform = `translate(-${Math.abs(index)}%)`;
-// });
-
-// function activeSlide(n) {
-//   for(let slide of slides) {
-//     slide.classList.remove('active');
-//   }
-//   slides[n].classList.add('active');
-// }
-
-// btnNext.addEventListener('click', (function () {
-//   let index = 0
-//   return function () {
-//     if(index == slides.length - 1){
-//       index = 0;
-//       activeSlide(index)
-//     } else {
-//       index++;
-//       activeSlide(index)
-//     }
-//   }
-// })());
-
-// btnPrev.addEventListener('click', (function () {
-//   index = 0
-//   return function () {
-//     if(index === 0) {
-//       index = slides.length - 1
-//       activeSlide(index)
-//     } else {
-//       index--;
-//       activeSlide(index)
-//     }
-//   }
-// })()
-// );
