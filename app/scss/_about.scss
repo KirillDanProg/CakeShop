@@ -1,4 +1,13 @@
 body {
+  .chief {
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: #fff;
+    img {
+      max-width: 50%;
+      border-radius: 50px;
+    }
+  }
   .about__map {
     max-width: 100%;
     height: 40vh;
@@ -7,26 +16,26 @@ body {
     padding: 20px;
     background-color: #fff;
     .social {
-        display: flex;
-        a {
-            margin: 8px;
-        }
+      display: flex;
+      a {
+        margin: 8px;
+      }
     }
 
     h4 {
-margin-bottom: 4px;
+      margin-bottom: 4px;
       font-size: 22px;
     }
     p {
-        margin-bottom: 17px;
+      margin-bottom: 17px;
       font-size: 20px;
     }
     i {
-        font-size: 45px;
+      font-size: 45px;
     }
     a {
-        color: #d9a484;
-        display: block;
+      color: #d9a484;
+      display: block;
     }
   }
 }

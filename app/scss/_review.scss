@@ -5,8 +5,7 @@ body {
   .reviews {
     padding: 150px 0;
     .container-review{
-      padding: 20px;
-      background-color: rgba(255, 244, 246, 0.834);
+      background-color: #fcf8f865;
     }
     .title {
       width: 100%;
@@ -47,6 +46,10 @@ body {
         }
         .review-content {
           display: none;
+          img {
+            margin-top: -17%;
+            margin-bottom: -15%;
+          }
         }
         .active-review {
           display: block;
