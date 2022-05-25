@@ -97,32 +97,44 @@ startSlider();
 const menuItems = document.querySelectorAll(".menu__item");
 const body = document.querySelector("body");
 const header = document.querySelector(".header");
+let active = null;
 
 menuItems.forEach((menuItem) => {
   menuItem.addEventListener("click", showModal);
 });
 
 function showModal(e) {
+  
   let target = e.target;
-  let modalImg = target.parentNode.children[0].getAttribute("src")
-  let modalName = target.parentNode.children[1].innerHTML
-  let modalPrice = target.parentNode.children[2].innerHTML
+  let modalImg = target.parentNode.children[0].getAttribute("src");
+  let modalName = target.parentNode.children[1].innerHTML;
+  let modalPrice = target.parentNode.children[2].innerHTML;
 
   if (
     target.classList.contains("cake__name") ||
     target.classList.contains("cake__img")
   ) {
     e.preventDefault();
-
-    header.innerHTML += createModal(modalImg, modalName, modalPrice)
+    header.innerHTML += createModal(modalImg, modalName, modalPrice);
     const modal = document.querySelector(".modal");
-    modal.classList.add("active-modal")
+    modal.classList.add("active-modal");
     const closeBtn = document.querySelector(".close-btn");
-    closeBtn.addEventListener("click", ()=> {
-      header.lastElementChild.remove()
-    })
+    active = true;
+    closeBtn.addEventListener("click", () => {
+      active = false
+      header.lastElementChild.remove();
+      if(!active) {
+        document.body.style.overflow = "auto"
+      }
+    });
   }
+
+  if(active) {
+    document.body.style.overflow = "hidden"
+  } 
 }
+
+
 
 function createModal(img, name, price) {
   return `
