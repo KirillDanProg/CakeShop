@@ -128,7 +128,6 @@ function showModal(e) {
       }
     });
   }
-
   if(active) {
     document.body.style.overflow = "hidden"
   } 
