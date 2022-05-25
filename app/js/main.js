@@ -118,6 +118,8 @@ function showModal(e) {
     header.innerHTML += createModal(modalImg, modalName, modalPrice);
     const modal = document.querySelector(".modal");
     modal.classList.add("active-modal");
+    const modalCont = document.querySelector(".modal-container")
+    modalCont.classList.add("active-modal-2")
     const closeBtn = document.querySelector(".close-btn");
     active = true;
     closeBtn.addEventListener("click", () => {
