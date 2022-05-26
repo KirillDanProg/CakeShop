@@ -104,7 +104,7 @@ menuItems.forEach((menuItem) => {
 });
 
 function showModal(e) {
-  
+  // vars for modal info
   let target = e.target;
   let modalImg = target.parentNode.children[0].getAttribute("src");
   let modalName = target.parentNode.children[1].innerHTML;
@@ -116,18 +116,22 @@ function showModal(e) {
   ) {
     e.preventDefault();
     header.innerHTML += createModal(modalImg, modalName, modalPrice);
+    // vars in modal window
     const modal = document.querySelector(".modal");
-    modal.classList.add("active-modal");
     const modalCont = document.querySelector(".modal-container")
-    modalCont.classList.add("active-modal-2")
     const closeBtn = document.querySelector(".close-btn");
+    const makeOrder = document.querySelector(".make-order");
+    // to activate modal
+    modal.classList.add("active-modal");
+    modalCont.classList.add("active-modal-2")
+    // to diactivate modal
     active = true;
+
+    makeOrder.addEventListener("click", () => {
+      scrollWindow()
+    })
     closeBtn.addEventListener("click", () => {
-      active = false
-      header.lastElementChild.remove();
-      if(!active) {
-        document.body.style.overflow = "auto"
-      }
+     scrollWindow()
     });
   }
   if(active) {
@@ -135,7 +139,13 @@ function showModal(e) {
   } 
 }
 
-
+function scrollWindow() {
+  active = false
+  header.lastElementChild.remove();
+  if(!active) {
+    document.body.style.overflow = "auto"
+  }
+}
 
 function createModal(img, name, price) {
   return `
@@ -152,7 +162,7 @@ function createModal(img, name, price) {
       <p class="info">2000кг</p>
       <h6>Энергетическая ценность:</h6>
       <p class="info">белки- 2,2 г; жиры- 9,3 г; углеводы- 34,2г / 100 г</p>
-      <a href="#order">Заказать</a>
+      <a class="make-order" href="#order">Заказать</a>
     </div>
   </section>
     `;

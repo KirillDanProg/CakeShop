@@ -5,6 +5,7 @@ body {
     z-index: 4;
     .banner {
       position: relative;
+     
       .btn-banner {
         position: absolute;
         top: 50%;
@@ -20,7 +21,7 @@ body {
 
       .slider {
         overflow: hidden;
-       
+        margin: 0 auto;
         .banner-img {
           display: flex;
           // transition: 0.4s;

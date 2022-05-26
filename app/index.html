@@ -21,8 +21,24 @@
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="container">
+      <header class="header">
+        <div class="container">
+          <div class="logo">
+            <span class="logo__img"
+              >Diana <i class="fa-solid fa-cake-candles"></i> cakes</span
+            >
+          </div>
+          <nav class="nav">
+            <ul class="list">
+              <li class="list__item"><a href="#order">Заказать</a></li>
+              <li class="list__item"><a href="">Доставка</a></li>
+              <li class="list__item"><a href="#about">О компании</a></li>
+              <li class="list__item"><a href="#reviews">Отзывы</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <header class="header-lie">
         <div class="logo">
           <span class="logo__img"
             >Diana <i class="fa-solid fa-cake-candles"></i> cakes</span
@@ -30,202 +46,173 @@
         </div>
         <nav class="nav">
           <ul class="list">
-            <li class="list__item"><a href="#order">Заказать</a></li>
+            <li class="list__item"><a href="">Заказать</a></li>
             <li class="list__item"><a href="">Доставка</a></li>
-            <li class="list__item"><a href="#about">О компании</a></li>
-            <li class="list__item"><a href="#reviews">Отзывы</a></li>
+            <li class="list__item"><a href="">О компании</a></li>
+            <li class="list__item"><a href="">Отзывы</a></li>
           </ul>
         </nav>
-      </div>
-    </header>
-
-    <header class="header-lie">
-      <div class="logo">
-        <span class="logo__img"
-          >Diana <i class="fa-solid fa-cake-candles"></i> cakes</span
-        >
-      </div>
-      <nav class="nav">
-        <ul class="list">
-          <li class="list__item"><a href="">Заказать</a></li>
-          <li class="list__item"><a href="">Доставка</a></li>
-          <li class="list__item"><a href="">О компании</a></li>
-          <li class="list__item"><a href="">Отзывы</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <section class="hero">
-      <div class="container">
-        <div class="banner">
-          <i class="fa-solid fa-angle-left prev btn-banner"></i>
-          <ul class="slider">
-            <div class="banner-img">
-              <img src="./images/banner4.JPG" />
-              <img src="./images/banner3.JPG" />
-              <img src="./images/banner2-2.JPG" />
-              <img class="first-clone" src="./images/banner5.JPG" />
-              <img src="./images/banner1.JPG" />
-              <img class="last-clone" src="./images/banner4.JPG" />
-              <img src="./images/banner3.JPG" />
-            </div>
+      </header>
+      <section class="hero">
+        <!-- <div class="container"> -->
+          <div class="banner">
+            <i class="fa-solid fa-angle-left prev btn-banner"></i>
+            <ul class="slider">
+              <div class="banner-img">
+                <img src="./images/banner4.JPG" />
+                <img src="./images/banner3.JPG" />
+                <img src="./images/banner2-2.JPG" />
+                <img class="first-clone" src="./images/banner5.JPG" />
+                <img src="./images/banner1.JPG" />
+                <img class="last-clone" src="./images/banner4.JPG" />
+                <img src="./images/banner3.JPG" />
+              </div>
+            </ul>
+            <i class="fa-solid fa-angle-right next btn-banner"></i>
+          </div>
+        <!-- </div> -->
+      </section>
+      <section id="main" class="main">
+        <h2 class="title title-main">Каталог</h2>
+        <div class="container">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <img class="cake__img" src="./images/banner1.JPG" alt="" />
+              <h4 class="cake__name">Назвавние тортика</h4>
+              <p><span class="price-span">цена:</span> 3000р</p>
+              <a href="#order" class="take-order">Заказать</a>
+            </li>
+            <li class="menu__item">
+              <img class="cake__img" src="./images/banner2.jpg" alt="" />
+              <h4 class="cake__name">Назвавние тортика</h4>
+              <p><span class="price-span">цена:</span> 3000р</p>
+              <a href="#order" class="take-order">Заказать</a>
+            </li>
+            <li class="menu__item">
+              <img class="cake__img" src="./images/banner3.JPG" alt="" />
+              <h4 class="cake__name">Назвавние тортика</h4>
+              <p><span class="price-span">цена:</span> 3000р</p>
+              <a href="#order" class="take-order">Заказать</a>
+            </li>
+            <li class="menu__item">
+              <img class="cake__img" src="./images/banner4.JPG" alt="" />
+              <h4 class="cake__name">Назвавние тортика</h4>
+              <p><span class="price-span">цена:</span> 3000р</p>
+              <a href="#order" class="take-order">Заказать</a>
+            </li>
+            <li class="menu__item">
+              <img class="cake__img" src="./images/banner5.JPG" alt="" />
+              <h4 class="cake__name">Назвавние тортика</h4>
+              <p><span class="price-span">цена:</span> 3000р</p>
+              <a href="#order" class="take-order">Заказать</a>
+            </li>
+            <li class="menu__item">
+              <img class="cake__img" src="./images/IMG_5906.JPG" alt="" />
+              <h4 class="cake__name">Назвавние тортика</h4>
+              <p><span class="price-span">цена:</span> 3000р</p>
+              <a href="#order" class="take-order">Заказать</a>
+            </li>
+            <li class="menu__item">
+              <img class="cake__img" src="./images/orange.JPG" alt="" />
+              <h4 class="cake__name">Назвавние тортика</h4>
+              <p><span class="price-span">цена:</span> 3000р</p>
+              <a href="#order" class="take-order">Заказать</a>
+            </li>
+            <li class="menu__item">
+              <img class="cake__img" src="./images/IMG_5910.JPG" alt="" />
+              <h4 class="cake__name">Назвавние тортика</h4>
+              <p><span class="price-span">цена:</span> 3000р</p>
+              <a href="#order" class="take-order">Заказать</a>
+            </li>
           </ul>
-          <i class="fa-solid fa-angle-right next btn-banner"></i>
-          <!-- <div class="title__content">
-            <h1 class="title">Заголовок</h1>
-            <p class="subtitle">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
-              ducimus!
-            </p>
-          </div> -->
         </div>
-      </div>
-    </section>
-
-    <section id="main" class="main">
-      <h2 class="title title-main">Каталог</h2>
-      <div class="container">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <img class="cake__img" src="./images/banner1.JPG" alt="" />
-            <h4 class="cake__name">Назвавние тортика</h4>
-            <p><span class="price-span">цена:</span> 3000р</p>
-            <a href="#order" class="take-order">Заказать</a>
-          </li>
-          <li class="menu__item">
-            <img class="cake__img" src="./images/banner2.jpg" alt="" />
-            <h4 class="cake__name">Назвавние тортика</h4>
-            <p><span class="price-span">цена:</span> 3000р</p>
-            <a href="#order" class="take-order">Заказать</a>
-          </li>
-          <li class="menu__item">
-            <img class="cake__img" src="./images/banner3.JPG" alt="" />
-            <h4 class="cake__name">Назвавние тортика</h4>
-            <p><span class="price-span">цена:</span> 3000р</p>
-            <a href="#order" class="take-order">Заказать</a>
-          </li>
-          <li class="menu__item">
-            <img class="cake__img" src="./images/banner4.JPG" alt="" />
-            <h4 class="cake__name">Назвавние тортика</h4>
-            <p><span class="price-span">цена:</span> 3000р</p>
-            <a href="#order" class="take-order">Заказать</a>
-          </li>
-          <li class="menu__item">
-            <img class="cake__img" src="./images/banner5.JPG" alt="" />
-            <h4 class="cake__name">Назвавние тортика</h4>
-            <p><span class="price-span">цена:</span> 3000р</p>
-            <a href="#order" class="take-order">Заказать</a>
-          </li>
-          <li class="menu__item">
-            <img class="cake__img" src="./images/IMG_5906.JPG" alt="" />
-            <h4 class="cake__name">Назвавние тортика</h4>
-            <p><span class="price-span">цена:</span> 3000р</p>
-            <a href="#order" class="take-order">Заказать</a>
-          </li>
-          <li class="menu__item">
-            <img class="cake__img" src="./images/orange.JPG" alt="" />
-            <h4 class="cake__name">Назвавние тортика</h4>
-            <p><span class="price-span">цена:</span> 3000р</p>
-            <a href="#order" class="take-order">Заказать</a>
-          </li>
-          <li class="menu__item">
-            <img class="cake__img" src="./images/IMG_5910.JPG" alt="" />
-            <h4 class="cake__name">Назвавние тортика</h4>
-            <p><span class="price-span">цена:</span> 3000р</p>
-            <a href="#order" class="take-order">Заказать</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="reviews" class="reviews">
-      <div class="container container-review">
-        <h2 class="title review-title">Отзывы клиентов</h2>
-        <div class="review-wrapper">
-          <i class="fa-solid fa-angle-left prev btn"></i>
-          <div class="review">
-            <div class="review-content active-review">
-              <img src="./images/reviews/IMG_5918.PNG" alt="" />
+      </section>
+      <section id="reviews" class="reviews">
+        <div class="container container-review">
+          <h2 class="title review-title">Отзывы клиентов</h2>
+          <div class="review-wrapper">
+            <i class="fa-solid fa-angle-left prev btn"></i>
+            <div class="review">
+              <div class="review-content active-review">
+                <img src="./images/reviews/IMG_5918.PNG" alt="" />
+              </div>
+              <div class="review-content">
+                <img src="./images/reviews/IMG_5919.PNG" alt="" />
+              </div>
+              <div class="review-content">
+                <img src="./images/reviews/IMG_5920.PNG" alt="" />
+              </div>
+              <div class="review-content">
+                <img src="./images/reviews/IMG_5921.PNG" alt="" />
+              </div>
             </div>
-            <div class="review-content">
-              <img src="./images/reviews/IMG_5919.PNG" alt="" />
-            </div>
-            <div class="review-content">
-              <img src="./images/reviews/IMG_5920.PNG" alt="" />
-            </div>
-            <div class="review-content">
-              <img src="./images/reviews/IMG_5921.PNG" alt="" />
-            </div>
+            <i class="fa-solid fa-angle-right next btn"></i>
           </div>
-          <i class="fa-solid fa-angle-right next btn"></i>
         </div>
-      </div>
-    </section>
-
-    <section id="order" class="order">
-      <h2 class="title">Оформить заказ</h2>
-      <!-- <img src="https://images.unsplash.com/photo-1562440499-64c9a111f713?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774" alt=""> -->
-      <form action="">
-        <input type="text" name="name" placeholder="Имя" required />
-        <input type="number" name="phone" placeholder="Телефон" required />
-        <input type="text" name="mail" placeholder="e-mail" required />
-        <input type="text" name="order" placeholder="Название тортика" />
-        <input type="submit" class="submit" />
-      </form>
-    </section>
-
-    <section id="about" class="about">
-      <div class="container">
-        <h2 class="title title-main">О компании</h2>
-        <div class="about__container">
-          <div class="chief">
-            <img src="./images/diana.JPG" alt="" />
-            <div class="chief__info">
-              <p>Друзья!</p>
-              <p>Хочу поделиться с вами радостной новостью!</p>
-              <p>
-                Я успешно окончила курсы в
-                <a href="#">@paulina_cake</a> Современный декор! свидетельство
-                тому, данный сертификат
-              </p>
-              <p>
-                На протяжении всего времени нас обучали как правильно и стильно
-                декорировать торты различными техниками
-              </p>
-              <p>
-                Очень много нового для себя я переняла из этих уроков, но
-                останавливаться на достигнутом не планирую!
-              </p>
+      </section>
+      <section id="order" class="order">
+        <h2 class="title">Оформить заказ</h2>
+        <!-- <img src="https://images.unsplash.com/photo-1562440499-64c9a111f713?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774" alt=""> -->
+        <form action="">
+          <input type="text" name="name" placeholder="Имя" required />
+          <input type="number" name="phone" placeholder="Телефон" required />
+          <input type="text" name="mail" placeholder="e-mail" required />
+          <input type="text" name="order" placeholder="Название тортика" />
+          <input type="submit" class="submit" />
+        </form>
+      </section>
+      <section id="about" class="about">
+        <div class="container">
+          <h2 class="title title-main">О компании</h2>
+          <div class="about__container">
+            <div class="chief">
+              <img src="./images/diana.JPG" alt="" />
+              <div class="chief__info">
+                <p>Друзья!</p>
+                <p>Хочу поделиться с вами радостной новостью!</p>
+                <p>
+                  Я успешно окончила курсы в
+                  <a href="#">@paulina_cake</a> Современный декор! свидетельство
+                  тому, данный сертификат
+                </p>
+                <p>
+                  На протяжении всего времени нас обучали как правильно и стильно
+                  декорировать торты различными техниками
+                </p>
+                <p>
+                  Очень много нового для себя я переняла из этих уроков, но
+                  останавливаться на достигнутом не планирую!
+                </p>
+              </div>
             </div>
-          </div>
-          <iframe
-            class="about__map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.637808182309!2d30.361376894920244!3d59.93815199375164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631d2cebc1153%3A0x9ff3cf9f0c425a96!2soz8.studio!5e0!3m2!1sen!2sru!4v1653376405073!5m2!1sen!2sru"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-          <div class="about__info">
-            <h4>Где мы находимся</h4>
-            <p>Sankt-Peterburg, Ozernoy Pereulok, 8, 191014</p>
-            <h4>Контакты</h4>
-            <a href="tel:+7955555333">+7-999-888-33-55</a>
-            <a href="mailto:diana@mail.ru">Diana__Cakes@mail.ru</a>
-            <div class="social">
-              <a href="https://vk.com/id89156859"
-                ><i class="fa-brands fa-vk"></i
-              ></a>
-              <a href="https://instagram.com/s.diana_cakes?igshid=YmMyMTA2M2Y="
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
+            <iframe
+              class="about__map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.637808182309!2d30.361376894920244!3d59.93815199375164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631d2cebc1153%3A0x9ff3cf9f0c425a96!2soz8.studio!5e0!3m2!1sen!2sru!4v1653376405073!5m2!1sen!2sru"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <div class="about__info">
+              <h4>Где мы находимся</h4>
+              <p>Sankt-Peterburg, Ozernoy Pereulok, 8, 191014</p>
+              <h4>Контакты</h4>
+              <a href="tel:+7955555333">+7-999-888-33-55</a>
+              <a href="mailto:diana@mail.ru">Diana__Cakes@mail.ru</a>
+              <div class="social">
+                <a href="https://vk.com/id89156859"
+                  ><i class="fa-brands fa-vk"></i
+                ></a>
+                <a href="https://instagram.com/s.diana_cakes?igshid=YmMyMTA2M2Y="
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
     <script src="js/main.min.js"></script>
   </body>
