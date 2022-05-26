@@ -2,7 +2,7 @@ body {
   .chief {
     padding-bottom: 20px;
     text-align: center;
-    background-color: #fff;
+    background-color: $back;
     img {
       max-width: 50%;
       border-radius: 50px;
@@ -13,8 +13,10 @@ body {
     height: 40vh;
   }
   .about__info {
+    margin: -5px;
     padding: 20px;
-    background-color: #fff;
+    background-color: $back;
+    font-family: 'Roboto', sans-serif;
     .social {
       display: flex;
       a {

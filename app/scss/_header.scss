@@ -1,5 +1,6 @@
 $main: rgb(71, 35, 35);
 $sec: #8e0b0a;
+$back: #fdf7ea;
 $light: rgb(254, 204, 212);
 
 * {
@@ -9,7 +10,10 @@ $light: rgb(254, 204, 212);
 
 body {
   box-sizing: border-box;
-  font-family: "Lobster", cursive;
+  // font-family: "Lobster", cursive;
+// font-family: 'Roboto', sans-serif;
+font-family: 'Playfair Display', serif;
+font-style: italic;
   color: $main;
 
   ul,
