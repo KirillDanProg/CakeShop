@@ -1,3 +1,6 @@
+import { links,  smoothScroll } from "./scroll.js";
+import {menuItems, body, header, active, showModal, scrollWindow, createModal} from "./modal.js"
+
 const reviews = document.querySelectorAll(".review-content");
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
@@ -92,78 +95,3 @@ function startSlider() {
 
 startSlider();
 
-// MODAL JS
-
-const menuItems = document.querySelectorAll(".menu__item");
-const body = document.querySelector("body");
-const header = document.querySelector(".header");
-let active = null;
-
-menuItems.forEach((menuItem) => {
-  menuItem.addEventListener("click", showModal);
-});
-
-function showModal(e) {
-  // vars for modal info
-  let target = e.target;
-  let modalImg = target.parentNode.children[0].getAttribute("src");
-  let modalName = target.parentNode.children[1].innerHTML;
-  let modalPrice = target.parentNode.children[2].innerHTML;
-
-  if (
-    target.classList.contains("cake__name") ||
-    target.classList.contains("cake__img")
-  ) {
-    e.preventDefault();
-    header.innerHTML += createModal(modalImg, modalName, modalPrice);
-    // vars in modal window
-    const modal = document.querySelector(".modal");
-    const modalCont = document.querySelector(".modal-container")
-    const closeBtn = document.querySelector(".close-btn");
-    const makeOrder = document.querySelector(".make-order");
-    // to activate modal
-    modal.classList.add("active-modal");
-    modalCont.classList.add("active-modal-2")
-    // to diactivate modal
-    active = true;
-
-    makeOrder.addEventListener("click", () => {
-      scrollWindow()
-    })
-    closeBtn.addEventListener("click", () => {
-     scrollWindow()
-    });
-  }
-  if(active) {
-    document.body.style.overflow = "hidden"
-  } 
-}
-
-function scrollWindow() {
-  active = false
-  header.lastElementChild.remove();
-  if(!active) {
-    document.body.style.overflow = "auto"
-  }
-}
-
-function createModal(img, name, price) {
-  return `
-    <section class="modal">
-    <div class="modal-container">
-      <i class="fa-solid fa-xmark close-btn"></i>
-      <img src="${img}">
-      <h3>${name}</h3>
-      <p class="price">${price}</p>
-      <h6>Состав:</h6>
-      <p class="info">Яйцо, сливки животные, крем для взбивания Шантипак, сахар, крахмал кукурузный, разрыхлитель, уксус, малина, сахарная пудра.
-        Без глютена.</p>
-      <h6>Масса:</h6>
-      <p class="info">2000кг</p>
-      <h6>Энергетическая ценность:</h6>
-      <p class="info">белки- 2,2 г; жиры- 9,3 г; углеводы- 34,2г / 100 г</p>
-      <a class="make-order" href="#order">Заказать</a>
-    </div>
-  </section>
-    `;
-}
