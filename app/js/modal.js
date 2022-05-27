@@ -10,14 +10,15 @@ menuItems.forEach((menuItem) => {
 function showModal(e) {
   // vars for modal info
   let target = e.currentTarget;
+  let testTarget = e.target
   let modalImg = target.children[0].lastElementChild.getAttribute("src");
   let modalName = target.children[2].innerHTML;
   let modalPrice = target.children[3].innerHTML;
 
   if (
-    target.classList.contains("menu__item")
-   
+    target.classList.contains("menu__item") && !testTarget.classList.contains("take-order")
   ) {
+    console.log(testTarget)
     e.preventDefault();
     header.innerHTML += createModal(modalImg, modalName, modalPrice);
     // vars in modal window
