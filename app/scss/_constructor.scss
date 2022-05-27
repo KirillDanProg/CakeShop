@@ -10,6 +10,14 @@ body {
     .title {
       margin-bottom: 50px;
     }
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 70%;
+      transform: translate(-50%, -50%);
+     
+    }
     form {
       position: absolute;
       top: 0;
@@ -19,49 +27,42 @@ body {
       // width: 60%;
       margin: 0 auto;
       padding-bottom: 50px;
-      img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 60%;
-        transform: translate(-50%, -50%);
-       
-      }
+      
       .cake-base-cont {
         position: absolute;
-        top: 100px;
+        top: 105px;
         left: 20px;
       }
       .cake-fill-cont {
         position: absolute;
         top: 150px;
-        right: 0;
+        right: 10px;
       }
       .cake-mousse-cont {
         position: absolute;
-        bottom: 100px;
+        bottom: 110px;
         right: 10px;
       }
       .cake-confi-cont {
         position: absolute;
-        bottom: 100px;
+        bottom: 110px;
         left: 10px;
       }
       .line-fill {
         position: relative;
-        top: 25px;
+        top: 35px;
         right: 60px;
-        transform: rotate(-35deg);
+        transform: rotate(-45deg);
         width: 140px;
         height: 2px;
         background: #000;
       }
       .line-base {
         position: relative;
-        top: 40px;
-        left: 30px;
-        transform: rotate(58deg);
-        width: 125px;
+        top: 45px;
+        left: 15px;
+        transform: rotate(68deg);
+        width: 135px;
         height: 2px;
         background: #000;
       }
