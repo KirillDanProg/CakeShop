@@ -16,9 +16,14 @@ function smoothScroll(e) {
   const header = document.querySelector(".header");
   const headerHeight = header.getBoundingClientRect().height;
   const position = elem.offsetTop - headerHeight;
-  if(id !== "order") {
+  if(id !== "order" && id !== "constructor") {
     window.scrollTo({
       top: position,
+      left: 0,
+    });
+  } else if(id === "constructor") {
+    window.scrollTo({
+      top: position + 35,
       left: 0,
     });
   } else {

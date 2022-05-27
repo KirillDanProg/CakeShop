@@ -1,8 +1,9 @@
 body {
   .constructor {
+    position: relative;
     height: 90vh;
     padding-top: 15px;
-    background: linear-gradient(#fdf7eae9, #fdf7ea27),
+    background: linear-gradient(#fdf7eade, #fdf7ea96),
       url(https://images.unsplash.com/photo-1622896784083-cc051313dbab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80)
         center/cover,
       no-repeat;
@@ -10,9 +11,78 @@ body {
       margin-bottom: 50px;
     }
     form {
-      width: 60%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      // width: 60%;
       margin: 0 auto;
       padding-bottom: 50px;
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 60%;
+        transform: translate(-50%, -50%);
+       
+      }
+      .cake-base-cont {
+        position: absolute;
+        top: 100px;
+        left: 20px;
+      }
+      .cake-fill-cont {
+        position: absolute;
+        top: 150px;
+        right: 0;
+      }
+      .cake-mousse-cont {
+        position: absolute;
+        bottom: 100px;
+        right: 10px;
+      }
+      .cake-confi-cont {
+        position: absolute;
+        bottom: 100px;
+        left: 10px;
+      }
+      .line-fill {
+        position: relative;
+        top: 25px;
+        right: 60px;
+        transform: rotate(-35deg);
+        width: 140px;
+        height: 2px;
+        background: #000;
+      }
+      .line-base {
+        position: relative;
+        top: 40px;
+        left: 30px;
+        transform: rotate(58deg);
+        width: 125px;
+        height: 2px;
+        background: #000;
+      }
+      .line-mousse {
+        position: relative;
+        bottom: 100px;
+        right: 15px;
+        transform: rotate(45deg);
+        width: 135px;
+        height: 2px;
+        background: #000;
+      }
+      .line-confi {
+        position: relative;
+        bottom: 103px;
+        left: 55px;
+        transform: rotate(-58deg);
+        width: 125px;
+        height: 2px;
+        background: #000;
+      }
       .select {
         display: block;
         width: 100%;
@@ -40,6 +110,12 @@ body {
         border-radius: 10px;
         font-size: 20px;
         font-weight: 700;
+      }
+      .take-order-const {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
       }
     }
   }
