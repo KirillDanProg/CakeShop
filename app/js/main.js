@@ -1,4 +1,4 @@
-import { links,  smoothScroll } from "./scroll.js";
+import { links,  smoothScroll, takeOrderLinks} from "./scroll.js";
 import {menuItems, body, header, active, showModal, scrollWindow, createModal} from "./modal.js"
 
 const reviews = document.querySelectorAll(".review-content");
@@ -95,3 +95,16 @@ function startSlider() {
 
 startSlider();
 
+
+
+
+takeOrderLinks.forEach((takeOrderLink) => {
+  takeOrderLink.addEventListener("click", getInputName);
+});
+
+function getInputName(e) {
+  let target = e.target;
+  let cakeName = target.parentNode.children[1].innerHTML;
+  let inputCakeName = document.querySelector("input[name=order]");
+  inputCakeName.value = cakeName
+}

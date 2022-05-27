@@ -21,4 +21,4 @@ function smoothScroll(e) {
     left: 0,
   });
 }
-export { links, smoothScroll };
+export { links, smoothScroll, takeOrderLinks};
