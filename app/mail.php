@@ -11,7 +11,7 @@ $email = $_POST['email'];
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.mail.ru';  																							// Specify main and backup SMTP servers
+$mail->Host = 'smtp.mail.ru';  					    	// Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'kirill_vn98@mail.ru'; // Ваш логин от почты с которой будут отправляться письма
 $mail->Password = 'Parol8719?'; // Ваш пароль от почты с которой будут отправляться письма
