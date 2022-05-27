@@ -1,7 +1,7 @@
 <?php 
 
 require_once('phpmailer/PHPMailerAutoload.php');
-$mail = new PHPMailer;
+$mail = new PHPMailer(true);
 $mail->CharSet = 'utf-8';
 
 $name = $_POST['name'];
@@ -16,10 +16,10 @@ $mail->SMTPAuth = true;                               // Enable SMTP authenticat
 $mail->Username = 'kirill_vn98@mail.ru'; // Ваш логин от почты с которой будут отправляться письма
 $mail->Password = 'Parol8719?'; // Ваш пароль от почты с которой будут отправляться письма
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
+$mail->Port = 587; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
 $mail->setFrom('kirill_vn98@mail.ru'); // от кого будет уходить письмо?
-$mail->addAddress('kirill_vn98@mail.ru');     // Кому будет уходить письмо 
+$mail->addAddress('kirjkirjkirj@gmail.com');     // Кому будет уходить письмо 
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
