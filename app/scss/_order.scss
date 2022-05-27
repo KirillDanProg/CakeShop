@@ -1,10 +1,14 @@
 body {
     .order {
-        margin-top: 50px;
-        padding-top: 150px;
-        height: auto;
-        background: linear-gradient(rgba(255, 192, 203, 0.391), rgba(255, 192, 203, 0.4)), url(https://images.unsplash.com/photo-1562440499-64c9a111f713?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774) center/cover, no-repeat;
-       
+        margin-top: 150px;
+        margin-bottom: 150px;
+        height: 60vh;
+        background-color: rgba(255, 255, 255, 0.455);
+
+        .title {
+            color: black;
+        }
+
         form {
             padding-bottom: 20px;
             

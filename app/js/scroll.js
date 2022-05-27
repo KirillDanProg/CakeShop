@@ -16,9 +16,17 @@ function smoothScroll(e) {
   const header = document.querySelector(".header");
   const headerHeight = header.getBoundingClientRect().height;
   const position = elem.offsetTop - headerHeight;
-  window.scrollTo({
-    top: position,
-    left: 0,
-  });
+  if(id !== "order") {
+    window.scrollTo({
+      top: position,
+      left: 0,
+    });
+  } else {
+    window.scrollTo({
+      top: position - 60,
+      left: 0,
+    });
+  }
+
 }
 export { links, smoothScroll, takeOrderLinks};

@@ -9,14 +9,14 @@ menuItems.forEach((menuItem) => {
 
 function showModal(e) {
   // vars for modal info
-  let target = e.target;
-  let modalImg = target.parentNode.children[0].getAttribute("src");
-  let modalName = target.parentNode.children[1].innerHTML;
-  let modalPrice = target.parentNode.children[2].innerHTML;
+  let target = e.currentTarget;
+  let modalImg = target.children[0].lastElementChild.getAttribute("src");
+  let modalName = target.children[2].innerHTML;
+  let modalPrice = target.children[3].innerHTML;
 
   if (
-    target.classList.contains("cake__name") ||
-    target.classList.contains("cake__img")
+    target.classList.contains("menu__item")
+   
   ) {
     e.preventDefault();
     header.innerHTML += createModal(modalImg, modalName, modalPrice);

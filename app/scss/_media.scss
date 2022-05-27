@@ -12,10 +12,14 @@
       .nav {
         .list {
           .list__item {
-            width: 25%;
             font-size: 16px;
             text-align: center;
+            a  {
+              font-size: 14px;
+              font-weight: 700;
+            }
           }
+
           .list__item:nth-child(1) {
             margin-right: 5px;
             top: -2px;
@@ -24,7 +28,7 @@
         }
       }
     }
-    .reviews:before {
+    .order:before {
       content: "";
       top: 0;
       left: 0;
