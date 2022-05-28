@@ -1,5 +1,4 @@
 body {
-
   .video {
     max-width: 100%;
   }
@@ -13,11 +12,11 @@ body {
   }
   .title-main {
     background-color: $back;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-style: italic;
   }
   .main {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     .menu__list {
       position: relative;
       display: grid;
@@ -32,7 +31,7 @@ body {
         margin-bottom: 16px;
         padding: 10px 0;
         overflow: hidden;
-        border-radius: 20px 20px 0 0 ;
+        border-radius: 20px 20px 0 0;
         background-color: #fff;
         .cake-img-container {
           margin-top: -10px;
@@ -55,14 +54,13 @@ body {
           // transform: scale(0.9);
           margin-top: -50px;
           margin-bottom: -25px;
-          
         }
         a {
           display: block;
           width: 70%;
           margin: 0 auto;
           padding: 5px 0;
-          background: linear-gradient( rgb(255, 170, 184), rgb(187, 44, 68) );
+          background: linear-gradient(rgb(255, 170, 184), rgb(187, 44, 68));
           color: rgb(247, 247, 247);
           text-align: center;
           border-radius: 10px;

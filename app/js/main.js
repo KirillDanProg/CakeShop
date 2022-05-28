@@ -1,5 +1,6 @@
 import { links,  smoothScroll, takeOrderLinks} from "./scroll.js";
-import {menuItems, body, header, active, showModal, scrollWindow, createModal} from "./modal.js"
+import { menuItems, body, header, active, showModal, scrollWindow, createModal } from "./modal.js";
+// import { inputMask, inputTel, form } from "./inputmask.js";
 
 const reviews = document.querySelectorAll(".review-content");
 const prev = document.querySelector(".prev");
@@ -110,3 +111,55 @@ function getInputName(e) {
     inputCakeName.value = cakeName
   }
 }
+
+
+const form = document.querySelector("form");
+const inputTel = document.querySelector("input[type=tel]");
+const inputMask = new Inputmask("+7(999) 999-99-99");
+inputMask.mask(inputTel);
+
+new window.JustValidate('.form', {
+    rules: {
+      tel: {
+        required: true,
+        function: () => {
+          const phone = telSelector.inputmask.unmaskedvalue();
+          return Number(phone) && phone.length === 10;
+        }
+      }
+    },
+    colorWrong: '#ff0f0f',
+    messages: {
+      name: {
+        required: 'Введите имя',
+        minLength: 'Введите 3 и более символов',
+        maxLength: 'Запрещено вводить более 15 символов'
+      },
+      email: {
+        email: 'Введите корректный email',
+        required: 'Введите email'
+      },
+      tel: {
+        required: 'Введите телефон',
+        function: 'Здесь должно быть 10 символов без +7'
+      }
+    },
+    submitHandler: function(thisForm) {
+      let formData = new FormData(thisForm);
+  
+      let xhr = new XMLHttpRequest();
+  
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+          if (xhr.status === 200) {
+            console.log('Отправлено');
+          }
+        }
+      }
+  
+      xhr.open('POST', 'mail.php', true);
+      xhr.send(formData);
+  
+      thisForm.reset();
+    }
+  })

@@ -1,41 +1,41 @@
 body {
-    .order {
-        margin-top: 150px;
-        margin-bottom: 150px;
-        height: 60vh;
-        background-color: rgba(255, 255, 255, 0.455);
+  .order {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    height: 75vh;
+    background-color: rgba(255, 255, 255, 0.455);
 
-        .title {
-            color: black;
-        }
-
-        form {
-            padding-bottom: 20px;
-            
-            input {
-                display: block;
-                width: 70%;
-                height: 50px;
-                margin: 0 auto;
-                margin-bottom: 15px;
-                padding: 0 15px;
-                font-family: 'Roboto', sans-serif;
-                font-style: italic;
-                font-size: 15px;
-                border-radius: 10px;
-                border: none;
-            }
-            .submit {
-                margin: 0 auto;
-                font-size: 20px;
-                background-color: rgba(232, 154, 45, 0.887);
-            }
-            .submit:hover {
-                background-color: rgba(250, 157, 27, 0.901);
-            }
-            .submit:active {
-                background-color: rgba(250, 157, 27, 0.901);
-            }
-        }
+    .title {
+      color: black;
     }
+
+    form {
+      padding-bottom: 20px;
+
+      input {
+        display: block;
+        width: 70%;
+        height: 50px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        padding: 0 15px;
+        font-family: "Roboto", sans-serif;
+        font-style: italic;
+        font-size: 15px;
+        border-radius: 10px;
+        border: none;
+      }
+      .submit {
+        margin: 0 auto;
+        font-size: 20px;
+        background-color: rgba(232, 154, 45, 0.887);
+      }
+      .submit:hover {
+        background-color: rgba(250, 157, 27, 0.901);
+      }
+      .submit:active {
+        background-color: rgba(250, 157, 27, 0.901);
+      }
+    }
+  }
 }
