@@ -106,5 +106,7 @@ function getInputName(e) {
   let target = e.target;
   let cakeName = target.parentNode.children[1].innerHTML;
   let inputCakeName = document.querySelector("input[name=order]");
-  inputCakeName.value = cakeName
+  if (!target.classList.contains("take-order-const")) {
+    inputCakeName.value = cakeName
+  }
 }

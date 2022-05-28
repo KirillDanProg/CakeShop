@@ -7,8 +7,16 @@ body {
       url(https://images.unsplash.com/photo-1622896784083-cc051313dbab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80)
         center/cover,
       no-repeat;
+      .constructor-container {
+        position: relative;
+       top: -20%;
+       left: 50%;
+       transform: translate(-50%);
+        max-width: 387px;
+        height: 646px;
+      }
     .title {
-      margin-bottom: 50px;
+      margin-bottom: 20px;
     }
     img {
       position: absolute;
@@ -30,22 +38,22 @@ body {
       
       .cake-base-cont {
         position: absolute;
-        top: 145px;
+        top: 135px;
         left: 20px;
       }
       .cake-fill-cont {
         position: absolute;
-        top: 190px;
+        top: 148px;
         right: 10px;
       }
       .cake-mousse-cont {
         position: absolute;
-        bottom: 150px;
+        bottom: 120px;
         right: 10px;
       }
       .cake-confi-cont {
         position: absolute;
-        bottom: 160px;
+        bottom: 120px;
         left: 10px;
       }
       .line-fill {
@@ -59,28 +67,28 @@ body {
       }
       .line-base {
         position: relative;
-        top: 45px;
-        left: 15px;
+        top: 33px;
+        left: 25px;
         transform: rotate(68deg);
-        width: 135px;
+        width: 105px;
         height: 2px;
-        background: #000;
+        background: $main;
       }
       .line-mousse {
         position: relative;
-        bottom: 100px;
+        bottom: 96px;
         right: 15px;
         transform: rotate(45deg);
-        width: 135px;
+        width: 125px;
         height: 2px;
         background: #000;
       }
       .line-confi {
         position: relative;
-        bottom: 103px;
+        bottom: 100px;
         left: 55px;
         transform: rotate(-58deg);
-        width: 125px;
+        width: 115px;
         height: 2px;
         background: #000;
       }
@@ -114,7 +122,8 @@ body {
       }
       .take-order-const {
         position: absolute;
-        bottom: 20px;
+        margin-top: 0;
+        bottom: 50px;
         left: 50%;
         transform: translateX(-50%);
       }
