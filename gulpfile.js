@@ -12,7 +12,7 @@ function cleanDist() {
   return del("dist")
 }
 function styles() {
-  return src("app/scss/style.scss")
+  return src("docs/scss/style.scss")
     .pipe(scss({ outputStyle: "compressed" }))
     .pipe(concat("style.min.css"))
     .pipe(
@@ -21,45 +21,45 @@ function styles() {
         grid: true,
       })
     )
-    .pipe(dest("app/css"))
+    .pipe(dest("docs/css"))
     .pipe(browserSync.stream());
 }
 
 function scripts() {
-  return src("app/js/main.js")
+  return src("docs/js/main.js")
     .pipe(concat("main.min.js"))
     .pipe(uglify())
-    .pipe(dest("app/js"))
+    .pipe(dest("docs/js"))
     .pipe(browserSync.stream());
 }
 function build() {
   return src(
     [
-      "app/css/style.min.css",
-      "app/fonts/**/*",
-      "app/js/main.min.js",
-      "app/*.html",
+      "docs/css/style.min.css",
+      "docs/fonts/**/*",
+      "docs/js/main.min.js",
+      "docs/*.html",
     ],
-    { base: "app" }
+    { base: "docs" }
   ).pipe(dest("dist"));
 }
 
 function watching() {
-  watch(["app/scss/**/*.scss"], styles);
-  watch(["app/js/main.js"], scripts);
-  watch(["app/*.html"]).on("change", browserSync.reload);
+  watch(["docs/scss/**/*.scss"], styles);
+  watch(["docs/js/main.js"], scripts);
+  watch(["docs/*.html"]).on("change", browserSync.reload);
 }
 
 function browsersync() {
   browserSync.init({
     server: {
-      baseDir: "app/",
+      baseDir: "docs/",
     },
   });
 }
 
 function images() {
-  return src("app/images/**/*").pipe(imagemin()).pipe(dest("dist/images"));
+  return src("docs/images/**/*").pipe(imagemin()).pipe(dest("dist/images"));
 }
 
 exports.styles = styles;
